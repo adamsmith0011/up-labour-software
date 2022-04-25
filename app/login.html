@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Up Labour Services Portal</title>
+
+    <link rel="stylesheet" href="../assets/vender/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="https://unpkg.com/toastmejs@latest/dist/css/toastme.css">
+
+</head>
+<body>
+
+    <!-- Header Start -->
+<header class="p-3 bg-danger text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+         <a href="#" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <img src="../assets/img/logo.png" class="bi me-2" width="45" height="45" role="img" aria-label="Bootstrap" >
+            </a>
+
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Wallet</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Form</a></li>
+            </ul>
+
+            <div class="text-end">
+            <button type="button" id="header-button" class="btn btn-outline-light me-2">Login</button>
+            </div>
+      </div>
+    </div>
+</header>    
+
+<div class=" row gx-0 px-5">
+
+    <div class="col-sm-12 col-md-6 col-lg-4 mt-5 offset-md-3 offset-lg-4">
+       <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" name="email" id = "email">
+                <p id="email-error" class="input-error"></p>
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" name="password" id = "pass">
+                 <p id="pass-error" class="input-error"></p>
+            </div>
+            <button type="submit" class="btn btn-danger" id="button" onclick="singInUser(this)">Submit</button>
+    </div>
+</div>
+
+<dialog id="dialog-open">
+    Hellow word
+</dialog>
+
+        <!-- Vender Links -->
+    <script  type="text/javascript" src="../assets/vender/jquery/jquery.js"></script>
+    <script  type="text/javascript" src="../assets/vender/bootstrap/bootstrap.js"></script>
+    
+
+
+    <script> const loginpage = true;</script>
+    <!-- Link Login Js -->
+    <script  type="text/javascript" src="../assets/js/__function.js"></script>
+    <script  type="text/javascript" src="../assets/js/__init.js"></script>
+    <script  type="text/javascript" src="../assets/js/login.js"></script>
+</body>
+</html>

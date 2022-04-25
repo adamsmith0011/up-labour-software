@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Hello World!</title>
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    </head>
+
+    <body style="background: white;">
+        <h1>Hello World!</h1>
+        <p>
+            We are using Node.js <span id="node-version"></span>,
+            Chromium <span id="chrome-version"></span>,
+            and Electron <span id="electron-version"></span>.
+        </p>
+
+      <div style="
+    display: flex;
+    gap: 10px;
+    flex-direction: row-reverse;
+    align-items: center;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+">
+            <div onclick="win_hide()" style="
+    height: 18px;
+    width: 18px;
+    background: red;
+    border-radius: 20px;
+    cursor: pointer;
+"></div><div onclick="win_full()" style="
+    height: 18px;
+    width: 18px;
+    background: yellow;
+    border-radius: 20px;
+    cursor: pointer;
+"></div><div onclick="win_close()" style="
+    height: 18px;
+    width: 18px;
+    background: green;
+    border-radius: 20px;
+    cursor: pointer;
+"></div>
+        </div>
+    </body>
+
+
+
+</html>

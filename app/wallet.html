@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Up Labour Services Portal</title>
+
+    <link rel="stylesheet" href="../assets/vender/bootstrap/bootstrap.css">
+</head>
+<body>
+
+    <!-- Header Start -->
+    <header class="sticky-top p-3 bg-danger text-white">
+        <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+            <a href="index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <img src="../assets/img/logo.png" class="bi me-2" width="45" height="45" role="img" aria-label="Bootstrap" >
+            </a>
+
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="index.html" class="nav-link px-2 text-white">Home</a></li>
+            <li><a href="wallet.html" class="nav-link px-2 text-white">Wallet</a></li>
+            <li><a href="form.html" class="nav-link px-2 text-white">Form</a></li>
+            </ul>
+
+    
+
+            <div class="text-end">
+            <button type="button" id="header-button" class="btn btn-outline-light me-2">Login</button>
+            </div>
+        </div>
+        </div>
+    </header>  
+    
+    
+    <div class="container">
+    <div class="row my-5">
+        <div class="col-lg-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title" id="wallet-amount">₹ 0</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Wallet Amount</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <table class="table caption-top table-striped table-responsive mb-5">
+        <caption>Wallet Transaction :-</caption>
+        <thead>
+            <tr>
+                <th scope="col">Trans Id</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Message</th>
+                <th scope="col">Reason</th>
+                <th scope="col">Type</th>
+                <th scope="col">Date</th>
+            </tr>
+        </thead>
+       <tbody id="tablebody"></tbody>
+    </table>
+</div>
+
+    <!-- Vender Links -->
+    <script src="../assets/vender/jquery/jquery.js"></script>
+    <script src="../assets/vender/bootstrap/bootstrap.js"></script>
+
+    <!-- Link Wallet Js -->
+    <script src="../assets/js/__function.js"></script>
+    <script src="../assets/js/__init.js"></script>
+    <script src="../assets/js/wallet.js"></script>
+</body>
+</html>

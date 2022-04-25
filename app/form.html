@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Up Labour Services Portal</title>
+
+    <link rel="stylesheet" href="../assets/vender/bootstrap/bootstrap.css">
+      <link rel="stylesheet" href="../assets/css/global.css">
+</head>
+<body>
+
+    <!-- Header Start -->
+    <header class="p-3 bg-danger text-white">
+        <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+            <a href="index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <img src="../assets/img/logo.png" class="bi me-2" width="45" height="45" role="img" aria-label="Bootstrap" >
+            </a>
+
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="index.html" class="nav-link px-2 text-white">Home</a></li>
+            <li><a href="wallet.html" class="nav-link px-2 text-white">Wallet</a></li>
+            <li><a href="form.html" class="nav-link px-2 text-white">Form</a></li>
+            </ul>
+
+    
+
+            <div class="text-end">
+            <button type="button" id="header-button" class="btn btn-outline-light me-2">Login</button>
+            </div>
+        </div>
+        </div>
+    </header>   
+    
+    <div class="row gx-0">
+    <div class="col-sm-12 col-md-6 col-lg-6 mt-5 offset-md-3 offset-lg-3 p-5 ">
+      
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Full Name:</label>
+                <input type="text" class="form-control" id="name" name="name" >
+                <p id="name-error" class="input-error"></p>
+            </div>
+
+
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Mobile No:</label>
+                <input type="number" class="form-control" id="mobile" name="phone" >
+                <p id="mobile-error" class="input-error"></p>
+            </div>
+
+
+
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Aadhar Card No:</label>
+                <input type="number" class="form-control" id="aadhar" name="adhar" >
+                <p id="aadhar-error" class="input-error"></p>
+            </div>
+
+
+
+            <div class="row ">
+                <div class="col-lg-6 mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Aadhar Front Side Photo:</label>
+                    <input type="file" class="form-control" id="aadhar-front-side-photo" accept="image/*" name="front" >
+                    <p id="aadhar-front-error" class="input-error"></p>
+                </div>
+                <div class="col-lg-6 mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Aadhar Back Side Photo:</label>
+                    <input type="file" id="aadhar-back-side-photo" class="form-control" accept="image/*" name="back" >
+                    <p id="aadhar-back-error" class="input-error"></p>
+                </div>
+            </div>
+
+
+            <button type="submit" name="submit" value="submit" id="submit-btn" class="btn btn-danger" onclick="submit_form(this)">Submit</button>
+       
+    </div>
+    </div>
+
+        <!-- Vender Links -->
+    <script src="../assets/vender/jquery/jquery.js"></script>
+    <script src="../assets/vender/bootstrap/bootstrap.js"></script>
+
+    <!-- Link Form Js -->
+    <script src="../assets/js/__function.js"></script>
+    <script src="../assets/js/__init.js"></script>
+    <script src="../assets/js/form.js"></script>
+</body>
+</html>
+

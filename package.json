@@ -1,0 +1,37 @@
+{
+  "name": "uplabourportal",
+  "productName":"Up Labour Services Portal",
+  "version": "1.2.6",
+  "description": "Up Labour Services Portal",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "author": {
+    "name": "Up Labour Portal",
+    "email": "team@uplabourservices.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^18.0.4",
+    "electron-builder": "^23.0.3"
+  },
+  "build": {
+    "appId": "com.uplabourservices",
+    "productName": "Up Labour Services Portal",
+    "win": {
+      "target": [
+        "NSIS"
+      ],
+      "icon": "logo.ico",
+      "requestedExecutionLevel": "requireAdministrator"
+    },
+    "nsis": {
+      "installerIcon": "logo.ico",
+      "uninstallerIcon": "logo.ico",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}
