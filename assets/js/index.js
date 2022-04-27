@@ -46,6 +46,7 @@ function loadTable(data) {
     console.log(item);
     elements += `<tr>
                         <th scope="col">${item.refId}</th>
+                        <td>${item.registrationNo}</td>
                         <td>${item.name}</td>
                         <td>${item.phone}</td>
                         <td>${item.aadhar}</td>

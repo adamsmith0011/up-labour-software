@@ -63,30 +63,32 @@ window.addEventListener("keydown", (event) => {
 
 function registration_logout() {
   if (registration_url1 == window_url || registration_url2 == window_url) {
-    let registration_no = document.getElementById(
-        "ContentPlaceHolder1_txtRegNo"
-      ),
-      clint_name = document.getElementById("txtLabourEng");
-    if (
-      registration_no != null &&
-      registration_no.value != "" &&
-      clint_name != null &&
-      clint_name != ""
-    ) {
-      let payload = {
-        registrationNo: registration_no.value,
-        clintName: clint_name.value,
-      };
+    setTimeout(() => {
+      let registration_no = document.getElementById(
+          "ContentPlaceHolder1_txtRegNo"
+        ),
+        clint_name = document.getElementById("txtLabourEng");
+      if (
+        registration_no != null &&
+        registration_no.value != "" &&
+        clint_name != null &&
+        clint_name != ""
+      ) {
+        let payload = {
+          registrationNo: registration_no.value,
+          clintName: clint_name.value,
+        };
 
-      let userData = sessionStorage.getItem("payload");
-      userData = userData != null ? JSON.parse(userData) : {};
+        let userData = sessionStorage.getItem("payload");
+        userData = userData != null ? JSON.parse(userData) : {};
 
-      Object.assign(payload, userData);
+        Object.assign(payload, userData);
 
-      sessionStorage.setItem("logout", true);
-      sessionStorage.setItem("payload", JSON.stringify(payload));
-      javascript: __doPostBack("ctl00$lnkButtonSignOut1", "");
-    }
+        sessionStorage.setItem("logout", true);
+        sessionStorage.setItem("payload", JSON.stringify(payload));
+        javascript: __doPostBack("ctl00$lnkButtonSignOut1", "");
+      }
+    }, 2000);
   }
 }
 
